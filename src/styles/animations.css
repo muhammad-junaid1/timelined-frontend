@@ -1,0 +1,127 @@
+.floating {
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 6px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.fade {
+  animation: fade 3s ease forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+}
+
+.app-fade {
+  animation: fade 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 2.3s ease forwards;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideRight 2s ease forwards;
+  width: 0px;
+}
+
+@keyframes slideRight {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 340px;
+  }
+}
+
+.current-class {
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
+    0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  color: var(--primary-color);
+  font-weight: 600;
+  --color1: rgb(64 124 255 / 75%);
+  --color2: rgb(71 136 254 / 53%);
+  --color3: rgb(92 158 255 / 65%);
+  --color4: rgb(185 204 234);
+  font-family: "Lato";
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.app-loading-container {
+  height: 15px;
+  width: 55px;
+  display: flex;
+  position: relative;
+}
+
+.app-loading-container .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  animation: move 500ms linear 0ms infinite;
+  margin-right: 12px;
+}
+.app-loading-container .circle:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 500ms linear 0ms infinite;
+}
+.app-loading-container .circle:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 500ms linear 0s infinite reverse;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(25px);
+  }
+}
