@@ -12,7 +12,7 @@ const TeacherCard = ({ teacher, selectedTeacher, setSelectedTeacher }) => {
     >
       <div className="flex items-center">
         <div className="w-[60px] mr-1.5 h-[60px] image-wrapper">
-          <img src={"http://isb.nu.edu.pk" + teacher.ImagePath} />
+          <img src={teacher.ImagePath} />
         </div>
         <div>
           <p className="mb-0">{teacher.Name}</p>

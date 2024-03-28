@@ -25,7 +25,7 @@ const SelectTeacher = ({ modal, handleClose }) => {
   useEffect(() => {
     const searchedTeachers = teachers?.filter(teacher=> teacher?.Name?.toLowerCase()?.includes(searchValue?.toLowerCase())); 
     setTeachersList(searchedTeachers); 
-  }, [searchValue]); 
+  }, [searchValue, teachers]); 
 
   return (
     <Dialog

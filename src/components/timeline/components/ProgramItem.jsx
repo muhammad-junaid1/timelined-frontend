@@ -57,7 +57,7 @@ export const ProgramItem = ({ program, setModal, ...rest }) => {
                 <div className="flex items-center">
                   <div className="w-[35px] h-[35px] image-wrapper shadow mr-3">
                     <ProgramImage
-                      src={"http://isb.nu.edu.pk/" + teacher.ImagePath}
+                      src={teacher.ImagePath}
                     />
                   </div>
                   <ProgramText>{teacher?.Name}</ProgramText>
