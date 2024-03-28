@@ -15,7 +15,7 @@ Link to Backend: https://github.com/muhammad-junaid1/timelined-backend/tree/main
 
 Here is the link to use the app. 
 
-https://timelined.web.app
+https://get-timelined.web.app/
 
 ## **Tech Stack**
 
