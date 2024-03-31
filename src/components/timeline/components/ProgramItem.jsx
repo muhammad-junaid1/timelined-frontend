@@ -8,7 +8,7 @@ import {
   ProgramImage,
   useProgram,
 } from "planby";
-import { useState } from "react";
+import User from "../../../assets/user.png"; 
 
 export const ProgramItem = ({ program, setModal, ...rest }) => {
   const { styles, formatTime, set12HoursTimeFormat, isLive } = useProgram({
@@ -57,7 +57,7 @@ export const ProgramItem = ({ program, setModal, ...rest }) => {
                 <div className="flex items-center">
                   <div className="w-[35px] h-[35px] image-wrapper shadow mr-3">
                     <ProgramImage
-                      src={teacher.ImagePath}
+                      src={User}
                     />
                   </div>
                   <ProgramText>{teacher?.Name}</ProgramText>

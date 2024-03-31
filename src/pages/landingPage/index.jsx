@@ -58,10 +58,10 @@ const LandingPage = () => {
     <>
       <div className="flex justify-center pt-16">
         <div className="w-[80vw] flex flex-col items-center fade-down">
-          <h1 className="text-6xl" style={{ fontWeight: 600 }}>
+          <h1 className="text-6xl text-center" style={{ fontWeight: 600 }}>
             Never miss a class again!
           </h1>
-          <p className="mt-3">
+          <p className="mt-3 text-center">
             Track your FAST NUCES classes in real-time with a weekly timeline.
           </p>
 

@@ -1,3 +1,5 @@
+import User from "../assets/user.png"; 
+
 const TeacherCard = ({ teacher, selectedTeacher, setSelectedTeacher }) => {
   const isActive = teacher?.Emp_ID === selectedTeacher?.Emp_ID;
   const handleClick = () => {
@@ -12,7 +14,7 @@ const TeacherCard = ({ teacher, selectedTeacher, setSelectedTeacher }) => {
     >
       <div className="flex items-center">
         <div className="w-[60px] mr-1.5 h-[60px] image-wrapper">
-          <img src={teacher.ImagePath} />
+          <img src={User} />
         </div>
         <div>
           <p className="mb-0">{teacher.Name}</p>
